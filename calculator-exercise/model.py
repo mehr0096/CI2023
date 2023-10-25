@@ -20,7 +20,7 @@ def evaluateExpression(expression):
     """
     try:
         result = str(eval(expression, {}, {}))
-    except:
+    except Exception:
         result = ERROR_MSG
-        
+
     return result
